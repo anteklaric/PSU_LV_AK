@@ -14,3 +14,10 @@ def ocjena_raspodjela(broj):
     else:
         return "Broj nije iz zadanog intervala"
     
+
+try:
+    unos=input("Unos broja ocjene od 0.0 do 1.0")
+    broj = float(unos)
+    print("Dodijeljena ocjena:", ocjena_raspodjela(broj))
+except ValueError:
+    print("Greska")   
